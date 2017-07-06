@@ -24,6 +24,15 @@ num = digits.at(2)
 puts num
 
 #*********
+numbers = []
+numbers.push 1
+numbers.unshift 5
+numbers << 2
+numbers.pop
+numbers.shift
+puts "#{numbers}"
+
+#*********
 numbers = [4, 1, 51, 0, 78]
 puts "Total: #{numbers.length}"
 puts "#{numbers.sort}"
