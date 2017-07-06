@@ -8,7 +8,7 @@ class Box
 
   # class method
   def self.count
-    puts "Box count is: #@@count"
+    "Box count is: #@@count"
   end
 
   def to_s
@@ -16,7 +16,7 @@ class Box
   end
 
   # accessor methods
-  def get_width
+  def width
     @width
   end
 
@@ -25,7 +25,7 @@ class Box
   end
 
   # setter methods
-  def set_width=(value)
+  def width=(value)
     @width = value
   end
 
@@ -45,7 +45,8 @@ end
 
 box = Box.new(450, 80)
 box.set_height = 90
-puts box.get_width
+box.width = 100
+puts box.width
 puts box.get_height
 puts "Area of the box is: #{box.get_area}"
 puts Box.count

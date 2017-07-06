@@ -1,8 +1,6 @@
 class Box
   BOX_COMPANY = "My Company S. A." # you cannot its value
   attr_accessor :width, :height
-  # attr_reader :width, :height # just reader
-  # attr_writer :width, :height
 
   def initialize(w, h)
     @width, @height = w, h
